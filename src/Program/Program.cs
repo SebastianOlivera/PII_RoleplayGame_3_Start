@@ -7,25 +7,38 @@ namespace Program
     {
         static void Main(string[] args)
         {
+            Dwarf Gimli = new Enemy("Gimli", 2);
+            Knight Sauron = new Enemy("Sauron", 3);
+            Archer Legolas = new Enemy("Legolas", 0);
+
             SpellsBook book = new SpellsBook();
             book.AddSpell(new SpellOne());
             book.AddSpell(new SpellOne());
 
-            Wizard gandalf = new Wizard("Gandalf");
+            Wizard gandalf = new Hero("Gandalf");
             gandalf.AddItem(book);
 
-            Dwarf gimli = new Dwarf("Gimli");
+            List<Hero> heores = new List<Hero>();
+            heroes.add(Gandalf);
+            
+            List<Enemy> enemies = new List<Enemy>();
+            enemies.add(Gimli);
+            enemies.add(Sauron);
+            enemies.add(Legolas);
 
-            Console.WriteLine($"Gimli has ❤️ {gimli.Health}");
-            Console.WriteLine($"Gandalf attacks Gimli with ⚔️ {gandalf.AttackValue}");
+            doEncounter(heroes, enemies);
 
-            gimli.ReceiveAttack(gandalf.AttackValue);
+            Console.WriteLine(heroes[0].name);
+            // Console.WriteLine($"Gimli has ❤️ {gimli.Health}");
+            // Console.WriteLine($"Gandalf attacks Gimli with ⚔️ {gandalf.AttackValue}");
 
-            Console.WriteLine($"Gimli has ❤️ {gimli.Health}");
+            // gimli.ReceiveAttack(gandalf.AttackValue);
 
-            gimli.Cure();
+            // Console.WriteLine($"Gimli has ❤️ {gimli.Health}");
 
-            Console.WriteLine($"Someone cured Gimli. Gimli now has ❤️ {gimli.Health}");
+            // gimli.Cure();
+
+            // Console.WriteLine($"Someone cured Gimli. Gimli now has ❤️ {gimli.Health}");
         }
     }
 }

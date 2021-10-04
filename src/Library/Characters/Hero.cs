@@ -7,9 +7,9 @@ namespace RoleplayGame
         public Hero (string name)
         :base (name)
         {
-
+            this.VP = 0;
         }
-        public void addvp (Enemy enemy)
+        public void addVp (Enemy enemy)
         {
             this.VP += enemy.VP;
         }
