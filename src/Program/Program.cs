@@ -29,16 +29,6 @@ namespace Program
             doEncounter(heroes, enemies);
 
             Console.WriteLine(heroes[0].name);
-            // Console.WriteLine($"Gimli has ❤️ {gimli.Health}");
-            // Console.WriteLine($"Gandalf attacks Gimli with ⚔️ {gandalf.AttackValue}");
-
-            // gimli.ReceiveAttack(gandalf.AttackValue);
-
-            // Console.WriteLine($"Gimli has ❤️ {gimli.Health}");
-
-            // gimli.Cure();
-
-            // Console.WriteLine($"Someone cured Gimli. Gimli now has ❤️ {gimli.Health}");
         }
     }
 }

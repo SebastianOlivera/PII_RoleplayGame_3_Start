@@ -8,6 +8,7 @@ namespace RoleplayGame
         public Enemy (string name, int vp)
         :base (name)
         {
+            //Vps Enemigos
             this.VP = vp;
         }
     }

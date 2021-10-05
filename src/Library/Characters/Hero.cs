@@ -10,7 +10,7 @@ namespace RoleplayGame
             this.VP = 0;
         }
         public void addVp (Enemy enemy)
-        {
+        { //Conteo de Vps
             this.VP += enemy.VP;
         }
     }
